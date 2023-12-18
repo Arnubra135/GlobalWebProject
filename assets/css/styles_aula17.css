@@ -1,0 +1,7 @@
+ul li::before{
+    content: ' cu  ';
+}
+
+::placeholder{
+    color: rgba(148, 0, 211, 0.5);
+}

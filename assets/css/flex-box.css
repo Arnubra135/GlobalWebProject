@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;            /*atributos padrão: row, stretch, flex-start*/
+    align-items: flex-start;               /*Alinha no eixo perpendicular*/
+    justify-content: space-between;        /*Alinha no eixo principal*/
+    background-color: aquamarine;
+    height: 500px;
+    flex-wrap: nowrap;           /* flex-wrap = Habilita quebra de linhas para remover overflow*/
+}
+
+.flex-item{
+    flex: 1 1 320px;
+    width: 100%;
+    background-color: blue;
+}
+.flex-item:nth-child(3){
+    align-self: flex-end;
+}

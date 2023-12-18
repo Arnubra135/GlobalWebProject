@@ -1,0 +1,41 @@
+.heading{
+    transition: all 0.3s ease-in-out;
+}
+
+.heading:hover{
+    background: rgba(55, 0, 255, 0.521);
+}
+
+a:hover{
+    background: darkorchid;
+    color: white;
+    text-decoration: none;
+}
+
+a:active{
+    background: darkgreen;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled{
+    background-color: blueviolet;
+    cursor: not-allowed;
+}
+
+input:checked + p{
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    font-style: italic;
+}
+
+.pai .lista li{
+    background: red;
+}

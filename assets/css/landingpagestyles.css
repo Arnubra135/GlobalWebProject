@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #330033;
+    --color-white: #fff;
+    --gap: 3rem;
+}
+
+
+
+.main-bg{
+    background-image: url(/assets/img/endless-constellation.svg);
+    background-position: center center;
+    padding-bottom: 3rem;
+    color: var(--color-white);
+    z-index: -10;
+}
+
+.white-bg{
+    background-color: var(--color-white);
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: #eee 0.1rem solid;
+    z-index: 2;
+
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 2.2rem;
+
+}
+
+.menu h1{
+    font-size: 2.3rem;
+    
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background-color: crimson;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+    z-index: 0;
+}
+
+.menu-gap{
+    height: 62px;
+    background-color: var(--primary-color);
+}
+
+.intro-content{
+    position: relative;
+    top: -1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    height: 100vh;
+    
+}
+
+.main-content-intro, .intro-img{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding-top: 1rem;
+}
+
+.main-content-intro h2{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.main-content-intro p{
+    font-size: 2rem;
+}
+
+.intro-img{
+    padding-top: -4rem;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-main-content{
+    max-width: 64rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+
+.top3-main-content h2{
+    margin-bottom: 3rem;
+}

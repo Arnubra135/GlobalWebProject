@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Treino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerador de Treino Personalizado</h1>
+    
+    <form id="formularioObjetivo">
+        <label for="inputObjetivo">Digite o seu objetivo:</label>
+        <input type="text" id="inputObjetivo" placeholder="Ex: Emagrecimento, Ganho de Massa, Condicionamento">
+        <button type="button" onclick="gerarTreino()">Gerar Treino</button>
+    </form>
+
+    <h2>Treino Gerado:</h2>
+    <ul id="treino"></ul>
+
+    <script>
+        function gerarTreino() {
+            const objetivoSelecionado = document.getElementById("inputObjetivo").value.trim();
+
+            // Validar se o usuário inseriu um objetivo
+            if (objetivoSelecionado === "") {
+                alert("Por favor, insira um objetivo válido.");
+                return;
+            }
+
+            // Aqui você faria uma chamada a uma API de IA real para obter um treino personalizado
+            // A resposta da API seria analisada para extrair os exercícios e detalhes do treino
+
+            // Para fins educacionais, aqui está um exemplo de treino fictício
+            const treinoFicticio = obterTreinoFicticio(objetivoSelecionado);
+
+            exibirTreino(treinoFicticio);
+        }
+
+        function obterTreinoFicticio(objetivo) {
+            // Lógica fictícia para gerar um treino com base no objetivo
+            // Aqui você pode implementar lógica mais sofisticada com base nos dados do usuário
+            return ["Exercício 1", "Exercício 2", "Exercício 3"];
+        }
+
+        function exibirTreino(treino) {
+            const listaTreino = document.getElementById("treino");
+            listaTreino.innerHTML = "";
+
+            treino.forEach(exercicio => {
+                const itemLista = document.createElement("li");
+                itemLista.textContent = exercicio;
+                listaTreino.appendChild(itemLista);
+            });
+        }
+    </script>
+</body>
+</html>

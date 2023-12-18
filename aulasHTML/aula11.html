@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label{
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" target="_blank" method="get" autocomplete="off">
+        <p>O meu Formulario</p>
+        <p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required> 
+        </p>
+        <p>
+            <label for="dev">Sou um Dev:</label>
+            <input type="checkbox" id="dev" name="dev"> 
+            </p>
+            <p>
+                Gênero: <br>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino"> 
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino"> 
+
+                </p>
+        <p>
+            <label for="data">Data de nascimento:</label><br>
+            <input type="date" id="data" name="data" value="2000-08-30">
+        </p>
+
+        <p>
+            <label for="email">Seu email:</label><br>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+        </p>
+
+        <p>
+            <label for="password">Digite uma senha:</label><br>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha...">
+        </p>
+
+        <p>
+            <label for="file">Sua foto:</label><br>
+            <input type="file" id="file" name="file" accept=".jpg, .png, .pdf" multiple >
+        </p>
+
+        <p>
+            <label for="number">Seu NUMERO DE TELEFONE:</label><br>
+            <input type="number" id="number" name="number" placeholder="Escolha uma quantidade" min="1" max="5" step="2">
+        </p>
+
+        <p>
+            <label for="url">Digite uma URL:</label><br>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+
+        <p>
+            <label for="search">Busca:</label><br>
+            <input type="search" id="search" name="search" placeholder="search">
+        </p>
+
+        <p>
+            <label for="select">Selecione uma opção:</label><br>
+            <select name="select" id="select">
+                <optgroup label="Teste">
+                <option value="qualquer1">Label 1</option>
+                <option value="qualquer2">Label 2</option>
+                <option value="qualquer3">Label 3</option>
+                <option value="qualquer4">Label 4</option>
+            </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">Digite um texto:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <button type="reset">Reiniciar</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>

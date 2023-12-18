@@ -1,0 +1,176 @@
+:root{
+    --gap: 90px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+    
+}
+
+.header{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.background-img{
+    background-image: url(/assets/img/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 0.4fr;
+}
+
+.menu img{
+    width: 70px;
+    height: auto;
+}
+
+.menu h1{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.menu input{
+    border: 0;
+    display: flex;
+    margin-top: 20px;
+    width: 90%;
+    position: relative;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    left: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu ul li {
+    padding: 12px;
+    display: block;
+    position: relative;
+    right: 5px;
+    
+}
+
+.menu ul li:nth-child(1){
+    color: white;
+}
+
+.menu ul li:nth-child(2){
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu ul li:nth-child(2):hover{
+    color: gray;
+}
+
+
+.body{
+    display: grid;
+    place-content: center;
+    height: 84.8vh;
+
+}
+
+.meiuca {
+    color: #fff;
+    display: grid;
+    align-items: center;
+    max-width: 640px;
+    height: 267px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.meiuca  h1{
+    font-size: 56px;
+}
+
+.meiuca h3{
+    font-size: 26px;
+}
+
+.meiuca .botao{
+    background-color: #fff;
+    color: black;
+    width: 35%;
+    height: 64px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 26px;
+    font-weight: bold;
+    transition: 0.3s;
+    vertical-align: top;
+    padding-top: 16px;
+    position: inherit;
+    left: 200px;
+    top: 40px;
+}
+
+.meiuca .botao:hover{
+    color: gray;
+}
+
+.rodape{
+    position: relative;
+    top: 10px;
+    height: 60px;
+    display: flex;
+    padding-left: 20px;
+    background-color: black;
+    align-items: center;
+}
+
+.rodape ul{
+    color: #acacac;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.rodape ul li{
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.rodape ul li:hover{
+    color: #fff;
+}

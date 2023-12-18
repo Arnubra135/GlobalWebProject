@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
+
+:root{
+    --primary-color: rgb(118, 181, 201);
+    --secondary-color: #fff;
+    --arena-color: rgb(0, 161, 161);
+    --menu-gap: 86.063px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.menu-writing{
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: transparent;
+    font-size: 21px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 20px;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline: 15px;
+    background-color: rgba(0, 161, 161, 0.938);
+    position: fixed;
+}
+
+
+.menu .menu-list{
+    list-style: none;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 21px;
+}
+
+.menu .logo{
+    position: relative;
+    width: 200px;
+    height: auto;
+}
+
+.menu .menu-list .menu-content{
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+.menu .menu-list .menu-content:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.select{
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 40px;
+}
+
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid black;
+    transition: 0.3s;
+    position: relative;
+    top: 13px;
+}
+
+.caret-rotate{
+    transform: rotate(180deg)
+}
+
+.topics-clicked{
+    padding: 15px;
+    border-radius: 40px 40px 0px 0px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+
+
+.select .menu-writing:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.topics-list{
+    display: none;
+    opacity: 0;
+}
+
+.topics-list-open{
+    list-style: none;
+    background-color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+    position: absolute;
+    width: 200px;
+    border: 1px solid #ece3e3;
+    display: block;
+    opacity: 1;
+}
+
+.topics-list-open .topics-content:hover{
+    background-color: var(--arena-color);
+    color: #fff;
+}
+
+.topics-list-open .topics-content{
+    border-radius: 40px;
+    color: black;
+    padding: 3px;
+    align-items: center;   
+}
+
+
+.section{
+    height: 100vh;
+}
+
+.menu-gap{
+    height: var(--menu-gap);
+    width: 100%;
+}
+
+.trending{
+    width: 100%;
+    background-image: url(/assets/img/WhatsApp\ Image\ 2023-08-07\ at\ 22.35.50.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    color: var(--secondary-color);
+}
+
+.trending-content{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
+.trending-content p{
+    font-size: 20px;
+}
+
+.inside-trending-content{
+    background-color: rgba(0, 161, 161, 0.527);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.news-feed{
+    max-width: 90%;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cover{
+    background-color: blueviolet;
+    height: 70%;
+    width: 80%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    transition: all 0.3s ease-in;
+    color: transparent;
+}
+
+.cover:hover{
+    height: 75%;
+    width: 85%;
+    color: white;
+}
+
+.cover-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70%;
+    margin: 30px;
+}
+
+.secondary-news{
+    margin-top: 3rem;
+    margin-right: 3rem;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.secondary-news-content{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in;
+    color: transparent;
+    
+}
+
+.sec-news-writen{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70%;
+    margin-left: 30px;
+}
+
+.secondary-news-content:hover{
+    width: 105%;
+    height: 105%;
+    color: white;
+}
+
+.one{
+    background-color: darksalmon ;
+}
+
+.two{
+    background-color: chartreuse;
+}
+
+.three{
+    background-color: brown;
+}
+
+.four{
+    background-color: darkmagenta;
+}
+
+.talk-to-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+}
+
+.talk-to-us h2{
+    font-size: 30px;
+}
+
+.talk-to-us p{
+    font-size: 22px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+}
+
+.wpp-contact{
+    width: 230px;
+    height: 350px;
+    background-color: var(--arena-color);
+    position: relative;
+    border-radius: 15px;
+    top: 30%;
+    left: 60%;
+    
+}
+
+.wpp-logo{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    background-image: url(/assets/img/vecteezy_whatsapp-logo-png_24273833_812.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -50px;
+    left: 63px;
+    border-radius: 100%;
+    border: solid 3px black;
+}
+
+.instagram-contact{
+    width: 230px;
+    height: 350px;
+    background-color: var(--arena-color);
+    position: relative;
+    border-radius: 15px;
+    top: 30%;
+    
+}
+
+.instagram-logo{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    background-image: url(/assets/img/vecteezy_instagram-mobile-app-logo-instagram-app-icon-ig-app-free_18910697.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -50px;
+    left: 63px;
+    border-radius: 100%;
+    border: solid 3px black;
+}
+
+/* Estilos para telas grandes (desktops) */
+    @media screen and (min-width: 1024px) {
+    
+  }
+  
+  /* Estilos para tablets e telas médias */
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+   
+  }
+  
+  /* Estilos para telas pequenas (smartphones) */
+    @media screen and (max-width: 767px) {
+    
+  }
+  
